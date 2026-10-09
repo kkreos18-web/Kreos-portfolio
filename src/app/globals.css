@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* Lenis owns smooth scrolling — native smooth-scroll must stay off to avoid fighting it */
+  scroll-behavior: auto;
+}
+
+body {
+  @apply bg-void text-ivory font-sans;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display font-semibold tracking-tight;
+}
+
+::selection {
+  background: rgba(179, 18, 63, 0.4);
+}
